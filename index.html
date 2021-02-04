@@ -91,7 +91,7 @@
       <!-- Раздел "Особенности" -->
       <section class="features">
         <div class="container">
-          <h2 class="visually-hiden">Почему мы?</h2>
+          <h2 class="visually-hidden">Почему мы?</h2>
           <ul class="features-list">
             <li class="features-item">
               <div class="features-img">
@@ -288,31 +288,31 @@
               <p class="item-text">Marketing</p>
               <ul class="team-social-list">
                 <li class="team-social-item">
-                  <a class="team-social-link" href=""
+                  <a class="team-social-link" href="#"
                     ><svg class="social-icon">
                       <use
                         href="./icons/symbol-defs.svg#icon-instagram"
                       ></use></svg
                   ></a>
                 </li>
-                <li class="social-item">
-                  <a class="team-social-link" href=""
+                <li class="team-social-item">
+                  <a class="team-social-link" href="#"
                     ><svg class="social-icon">
                       <use
                         href="./icons/symbol-defs.svg#icon-facebook"
                       ></use></svg
                   ></a>
                 </li>
-                <li class="social-item">
-                  <a class="team-social-link" href=""
+                <li class="team-social-item">
+                  <a class="team-social-link" href="#"
                     ><svg class="social-icon">
                       <use
                         href="./icons/symbol-defs.svg#icon-twitter"
                       ></use></svg
                   ></a>
                 </li>
-                <li class="social-item">
-                  <a class="team-social-link" href=""
+                <li class="team-social-item">
+                  <a class="team-social-link" href="#"
                     ><svg class="social-icon">
                       <use
                         href="./icons/symbol-defs.svg#icon-linkedin"
@@ -488,6 +488,15 @@
               </li>
             </ul>
           </div>
+          <div class="subscribe">
+            <p class="subscribe-text">Подпишитесь на рассылку</p>
+            <form action="#" autocomplete="off">
+              <input class="subscribe-input" type="text" placeholder="E-mail" name="email">
+              <button class="subscribe-button">Подписаться<svg class="subscribe-icon"><use href="../icons/symbol-defs.svg#icon-send"></use></svg>
+              </button>
+            </form>
+            
+          </div>
         </div>
       </div>
     </footer>
@@ -495,7 +504,66 @@
 
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal"><button data-modal-close>Close</button></div>
+      <div class="modal">
+        <button class="modal-close-button" data-modal-close>
+          <svg class="modal-icon-close">
+            <use href="./icons/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+          <h2 class="modal-caption">Оставьте свои данные, мы вам перезвоним</h2>
+          <form action="#" autocomplete="off">
+            <div class="modal-field username">
+              <label class="modal-input-caption">
+                <div class="modal-input-label-name">Имя</div>
+                <div class="modal-input-field-box">
+                <input autofocus="true" class="modal-input-field" type="text" name="username" />
+                <svg class="modal-img"><use href="../icons/symbol-defs.svg#icon-person"></use></svg>
+                </div>
+              </label>
+            </div>
+            <div class="modal-field user-phone">
+              <label class="modal-input-caption">
+                <div class="modal-input-label-name">Телефон</div>
+                <div class="modal-input-field-box">
+                <input class="modal-input-field" type="tel" name="phone_number" />
+                <svg class="modal-img"><use href="./icons/symbol-defs.svg#icon-phone"></use></svg>
+                </div>
+              </label>
+            </div>
+            <div class="modal-field user-mail">
+              <label class="modal-input-caption">
+                <div class="modal-input-label-name">Почта</div>
+                <div class="modal-input-field-box">
+                <input class="modal-input-field" type="email" c />
+                <svg class="modal-img"><use href="./icons/symbol-defs.svg#icon-email"></use></svg>
+                </div>
+              </label>
+            </div>
+            <div class="modal-field user-feedback">
+              <label class="modal-input-caption">
+                <div class="modal-input-label-name">Комментарий</div>
+                <textarea class="modal-feedback" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+            </div> 
+             <div class="modal-checkbox">
+              <label>
+                <input class="modal-checkbox-input visually-hidden" type="checkbox" name="hobby"/>
+                <!-- <input class="modal-checkbox-input" type="checkbox" name="hobby"/> -->
+
+                <div class="modal-checkbox-text">
+                    <svg class="modal-checkbox-icon icon-checkbox">
+                        <use href="./icons/symbol-defs.svg#icon-checkbox">
+                        </use>
+                    </svg>
+                    <svg class="modal-checkbox-icon icon-checked">
+                        <use href="./icons/symbol-defs.svg#icon-checked">
+                        </use>
+                    </svg>
+                    Соглашаюсь с рассылкой и принимаю <a class="modal-link" href="">Условия договора</a></div>
+              </label>
+            </div>
+            <button class="modal-send-button">Отправить</button>
+        </form>
+      </div>
     </div>
     <!-- /Модальное окно -->
     <script src="./js/modal.js"></script>
