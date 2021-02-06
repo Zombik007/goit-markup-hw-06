@@ -547,6 +547,10 @@ li {
   flex-direction: column;
 }
 
+.footer-address {
+  min-width: 231px;
+}
+
 /* Общие стили текста подвала */
 .footer-text {
   font-weight: 400;
@@ -584,7 +588,7 @@ li {
 .social {
   display: inline-flex;
   flex-direction: column;
-  margin-right: 93px;
+  margin-right: 92px;
 }
 
 /* Задается текст блока социальных сетей в подвале страницы */
@@ -642,7 +646,7 @@ li {
   width: 358px;
   height: 50px;
   background-color: transparent;
-  margin-right: 12px;
+  margin-right: 8px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
